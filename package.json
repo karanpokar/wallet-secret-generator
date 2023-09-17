@@ -23,7 +23,6 @@
   "dependencies": {
     "@ethersproject/hdnode": "^5.7.0",
     "bip39": "^3.1.0",
-    "shamirs-secret-sharing": "^1.0.1",
-    "wallet-secret-generator": "^1.0.3"
+    "shamirs-secret-sharing": "^1.0.1"
   }
 }
