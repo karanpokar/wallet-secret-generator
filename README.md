@@ -4,11 +4,6 @@
 This module helps to generate seedphrase and secret shares using Ethers and Shamir Secret Sharing.
 
 
-# Wallet-Secret Generator
-
-This module helps to generate seedphrase and secret shares using Ethers and Shamir Secret Sharing.
-
-
 ## Installation
 
 Install my-project with npm
@@ -24,8 +19,20 @@ Install my-project with npm
 ```javascript
 import {generateSeedPhrase} from 'wallet-secret-generator'
 
-const seedPhrase= generateSeedPhrase();
+const seedPhrase= await generateSeedPhrase();
 ```
+
+**Generate Wallet with Secret Shares Phrase**
+
+```javascript
+import {generateWalletWithShares} from 'wallet-secret-generator'
+
+const seedPhrase= await generateWalletWithShares(noOfShares,shareThreshold,walletPath);
+1. noOfShares: Maximun number of share to be generated from secret
+2. shareThreshold: Minimum Shares required to regenerate the secret
+3. path: Wallet Path, example:"m/44'/60'/0'/0/0", will create first wallet from seedphrase
+```
+
 **Generate SSS Shares**
 
 ```javascript
