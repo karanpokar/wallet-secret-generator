@@ -1,6 +1,6 @@
 {
   "name": "wallet-secret-generator",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "This module helps to generate seedphrase and secret shares using Ethers and Shamir Secret Sharing.",
   "main": "index.js",
   "scripts": {

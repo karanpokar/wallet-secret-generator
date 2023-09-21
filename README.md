@@ -63,7 +63,11 @@ import {generateEOA} from 'wallet-secret-generator'
 const seedPhrase= generateEOA(seed:String,path:String);
 
  1. seed: Seed Phrase from generateSeedPhrase;
- 2. path: Wallet Path, example:"m/44'/60'/0'/0/0", will create first wallet from seedphrase
+ 2. path: Wallet Path, example:"m/44'/60'/0'/0/0", will create first wallet from seedphrase. 
 
 ```
+Wallet Derivation Paths: https://help.myetherwallet.com/en/articles/5867305-hd-wallets-and-derivation-paths
 
+Shamir Secret Sharing: https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing
+
+EOA: https://ethereum.org/en/developers/docs/accounts/
